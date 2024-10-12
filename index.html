@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение стиля комнаты</title>
+</head>
+<body>
+    <h1>Изменение стиля комнаты</h1>
+    <form action="style-change.php" method="post" enctype="multipart/form-data">
+        <label for="image">Выберите изображение:</label>
+        <input type="file" name="image" id="image" required><br><br>
+        
+        <label for="style">Выберите стиль:</label>
+        <select name="style" id="style" required>
+            <option value="Светлее">Светлее</option>
+            <option value="Минималистичнее">Минималистичнее</option>
+            <option value="Яркие цвета">Яркие цвета</option>
+        </select><br><br>
+        
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
